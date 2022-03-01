@@ -35,7 +35,7 @@ header {
     width: 100%;
     font-size:30px;
     padding: 10px 100px 12px 10px;
-    background-image: url(dota2_header.png);
+    background-image: url("https://raw.githubusercontent.com/Wirosablengs/Progate-JS-Bootcampt-Final-Project/main/dota2theme.jpeg");
 }
 
 .logo {
@@ -46,7 +46,7 @@ header {
 
 #main {
     /* background: linear-gradient(225deg, rgb(58, 16, 16) 25%, rgb(17, 1, 1) 55%); */
-    background-image: url("dota2theme.jpeg");
+    background-image: url("https://raw.githubusercontent.com/Wirosablengs/Progate-JS-Bootcampt-Final-Project/main/dota2theme.jpeg");
     background-size: cover;
     height: 750px;
     text-align: center;

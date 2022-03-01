@@ -8,7 +8,7 @@ function heroNotFound(notFound) {
     } else { 
         notFoundEle.innerHTML = '';
     }
-  }
+  };
 
 async function fetchHeroes () {
     const url= `https://api.opendota.com/api/heroStats/`;
@@ -22,7 +22,7 @@ async function fetchHeroes () {
         } 
     }
     heroNotFound(notFound);        
-}
+};
 
 function createHeroesCard(heroes) {
     let heroContainer = document.createElement("myDiv"); 
@@ -79,4 +79,4 @@ const findHeroes = async () => {
     dota_container.innerHTML = '';
     keyword = document.getElementById("search-input").value;
     fetchHeroes();
-}    
+};    

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 Web Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap">
+    <link href="//db.onlinewebfonts.com/c/6154a6c90acab96e63ecc820d9ca5626?family=Trajan+Bold" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <img class="logo" src="dota2.jpg">
+    </header>
+    <section id="main">
+        <div class = "container">
+            <div class = "heroes-wrapper">
+              <div class = "heroes-search">
+                <h2 class = "font-effect-fire-animation" id="title" style="color:#9B1013">Find Your Heroes</h2>
+                <div class = "heroes-search-box">
+                  <input type = "text" class = "search-control" placeholder="search heroes by name" id = "search-input">
+                  <button onclick="findHeroes()" class = "search-btn btn" id = "search-btn">
+                    <i class = "fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class = "heroes-result">
+                <h2 class = "font-effect-fire" style="color:#9B1013">Your Search Results:</h2>
+                <h3 class= "font-effect-fire" style="color:#9B1013" id="notFound"></h3>
+                <div class= "heroes-card" id= "heroes_card">
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+</body>    
+</html>

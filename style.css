@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&effect=fire-animation');
+@import url('https://db.onlinewebfonts.com/c/6154a6c90acab96e63ecc820d9ca5626?family=Trajan');
+@font-face {font-family: "Trajan Bold";
+    src: url("6154a6c90acab96e63ecc820d9ca5626.eot"); /* IE9*/
+    src: url("6154a6c90acab96e63ecc820d9ca5626.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("6154a6c90acab96e63ecc820d9ca5626.woff2") format("woff2"), /* chrome、firefox */
+    url("6154a6c90acab96e63ecc820d9ca5626.woff") format("woff"), /* chrome、firefox */
+    url("6154a6c90acab96e63ecc820d9ca5626.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("6154a6c90acab96e63ecc820d9ca5626.svg#Trajan Bold") format("svg"); /* iOS 4.1- */
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trajan Bold";
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+:root{
+    --crimson-red: #9B1013;
+    --crimson-red-dark: #680419;
+}
+
+header {
+    height: 75px;
+    width: 100%;
+    font-size:30px;
+    padding: 10px 100px 12px 10px;
+    background-image: url(dota2_header.png);
+}
+
+.logo {
+    width: 65px;
+    margin-top: -5px;
+    margin-left: 50px;
+}
+
+#main {
+    /* background: linear-gradient(225deg, rgb(58, 16, 16) 25%, rgb(17, 1, 1) 55%); */
+    background-image: url("dota2theme.jpeg");
+    background-size: cover;
+    height: 750px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+    overflow: hidden;
+}
+
+/* */
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+.text{
+    opacity: 0.8;
+}
+#title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Trajan Bold";
+}
+.title{
+    font-family: "Trajan Bold";
+}
+
+/*  */
+.container{
+    min-height: 100vh;
+}
+
+.heroes-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+.heroes-search{
+    margin: 2rem 0;
+}
+
+.heroes-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.search-control,
+.search-btn{
+    width: 100%;
+}
+
+.search-control{
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--crimson-red);
+    color: rgb(0, 0, 0);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.search-control::placeholder{
+    color: grey;
+}
+
+.search-btn{
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+    background: var(--crimson-red);
+    color: #fff;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+.search-btn:hover{
+    background: var(--crimson-red-dark);
+}
+
+.heroes-result{
+    margin-top: 4rem;
+}
+
+#heroes{
+    margin: 2.4rem 0;
+}
+
+p {
+    font-family: "Trajan Bold";
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+    color:#fff
+}
+
+h1 {
+    color: #BEBEBE;
+    font-family: "Trajan Bold";
+}
+
+.heroes-card{
+    background: linear-gradient(to right top, rgba(162, 61, 21, 0.8), rgba(185, 69, 24, 0.8), rgba(207, 78, 27, 0.8), 
+    rgba(226, 88, 34, 0.8), rgba(155, 2, 2, 0.8), rgba(128, 0, 0, 0.8), rgba(102, 0, 0, 0.8), rgba(77, 0, 0, 0.8)) ;
+
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	display: flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+	align-content: space-between;
+	justify-content: center;
+	margin: 0; 
+}
+
+.heroes-card img{
+    border-radius: 25%;
+    width: 75%;
+    margin-top: 10px;
+    
+}
+
